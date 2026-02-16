@@ -102,7 +102,7 @@ const sagaEvents: TimelineEvent[] = [
     },
     {
         date: "Feb 13, 2026 — 2:27 PM",
-        title: "The Smoking Gun — (Human) Agent W-04's False Promise",
+        title: "The Nail in the Coffin — (Human) Agent W-04's False Promise",
         type: "critical",
         description:
             '(Human) Agent W-04 confirms IN WRITING on a phone follow-up: "the transfer will be refunded until the end of the day." Client informed. Business decisions made based on this official statement.',
@@ -112,7 +112,7 @@ const sagaEvents: TimelineEvent[] = [
             "Regarding the reboarding process, the team was not able to proceed with it. So in this case, the transfer will be refunded until the end of the day.",
     },
     {
-        date: "Feb 13, 2026 — 10:05 PM",
+        date: "Feb 14, 2026 — 2:36 AM",
         title: "The Gaslight — (Human) Agent W-05 Retracts W-04's Promise",
         type: "danger",
         description:
@@ -132,6 +132,17 @@ const sagaEvents: TimelineEvent[] = [
             'Email from (Human) Agent W-06: "Neither you nor your client should expect the funds"',
         quote:
             "You are correct—neither you nor your client should expect the funds to be available by February 18th.",
+    },
+    {
+        date: "Feb 16, 2026",
+        title: "The Public Confession — Copy-Paste Defense",
+        type: "warning",
+        description:
+            'Wise posts identical copy-paste responses on Google Maps and Instagram publicly citing "Section 4.6" of their Customer Agreement to justify retaining the $43.88 fee for a service they refused to render. They explicitly state: "if one of these card payments is refunded, then we\'re unable to return the fees" — publicly admitting to the exact practice the CFPB fined them for in Consent Order 2025-CFPB-0004: failing to refund fees when funds were not made available.',
+        evidence:
+            "Public posts on Google Maps & Instagram (Exhibit D)",
+        quote:
+            "Similarly, if one of these card payments is refunded, then we're unable to return the fees.",
     },
 ];
 
@@ -216,7 +227,7 @@ export default function WiseTimeline() {
                                     #001
                                 </span>
                                 <span className="px-2 py-0.5 bg-red-950/40 border border-red-900/30 rounded text-[10px] font-mono text-red-400 uppercase">
-                                    11 Incidents
+                                    12 Incidents
                                 </span>
                             </div>
                         </div>
@@ -235,7 +246,7 @@ export default function WiseTimeline() {
                             {/* Stats Bar */}
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-zinc-800">
                                 {[
-                                    { label: "Days in Limbo", value: "12+", icon: Clock },
+                                    { label: "Days in Limbo", value: "13+", icon: Clock },
                                     { label: "Reps Involved", value: "8", icon: Info },
                                     { label: "Complaints Filed", value: "7", icon: FileWarning },
                                     { label: "Promises Broken", value: "3", icon: XCircle },
@@ -470,7 +481,7 @@ export default function WiseTimeline() {
                                             fee. Revoked the service
                                             <strong className="text-red-300"> after</strong> capture.
                                             Promised a refund ((Human) Agent W-04, Feb 13) then retracted it
-                                            ((Human) Agent W-05, same day). Funds now held{" "}
+                                            ((Human) Agent W-05, next morning). Funds now held{" "}
                                             <strong className="text-red-200">indefinitely</strong> due
                                             to chargeback friction that{" "}
                                             <em>Wise&apos;s own failures caused</em>.

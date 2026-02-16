@@ -1,10 +1,12 @@
 import BattleLog from "./components/BattleLog";
 import CaseBreakdown from "./components/CaseBreakdown";
 import ComplaintCTA from "./components/ComplaintCTA";
+import ContractTrap from "./components/ContractTrap";
 import CookieConsent from "./components/CookieConsent";
 
 import {
   ExternalLink,
+  FileText,
   Shield,
   Users,
   HeartOff,
@@ -40,6 +42,13 @@ export default function Home() {
           </a>
           <span className="w-px h-3 bg-zinc-800" />
           <a
+            href="/consent-order"
+            className="text-xs font-mono text-zinc-500 hover:text-zinc-300 uppercase tracking-wider transition-colors"
+          >
+            Consent Order
+          </a>
+          <span className="w-px h-3 bg-zinc-800" />
+          <a
             href="/language"
             className="text-xs font-mono text-zinc-500 hover:text-zinc-300 uppercase tracking-wider transition-colors"
           >
@@ -69,7 +78,7 @@ export default function Home() {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">
             Fucked Over
           </span>{" "}
-          By Your Online Bank?
+          By Your Online &ldquo;Bank&rdquo;?
         </h2>
 
         <h3 className="text-base md:text-lg text-zinc-500 max-w-2xl mx-auto leading-relaxed mt-4">
@@ -129,8 +138,30 @@ export default function Home() {
         <CaseBreakdown />
       </section>
 
+      {/* Divider */}
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
+      </div>
 
+      {/* The Contract Trap Section */}
+      <section className="max-w-3xl mx-auto py-12 md:py-16 px-4 md:px-6">
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-xl md:text-2xl font-bold text-white flex items-center gap-3 tracking-tight">
+            <FileText className="w-5 h-5 text-red-500" />
+            The Contract Trap
+          </h2>
+          <span className="px-3 py-1.5 bg-zinc-900 border border-zinc-800 rounded-lg text-[10px] font-mono text-zinc-600 uppercase tracking-wider">
+            Contract vs. Regulators
+          </span>
+        </div>
 
+        <ContractTrap />
+      </section>
+
+      {/* Divider */}
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
+      </div>
 
       {/* CTA Section */}
       <section id="submit-complaint" className="max-w-2xl mx-auto py-16 md:py-20 px-4 md:px-6">

@@ -101,12 +101,12 @@ export default function LanguagePage() {
                             A Public Service Announcement
                         </p>
                         <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-[0.95]">
-                            Don&apos;t Like
+                            Don&apos;t Like Our Language?
                             <br />
-                            Our Language?
+
                         </h1>
-                        <p className="text-5xl md:text-7xl font-black tracking-tight mt-4 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-                            Fuck You, Jackass.
+                        <p className="text-4xl md:text-6xl font-black tracking-tight mt-4 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                            Then Fuck You, Jackass.
                         </p>
                         <p className="text-zinc-500 text-sm md:text-base mt-8 max-w-xl mx-auto leading-relaxed">
                             Just kidding. Kind of. But seriously — every word on this site is

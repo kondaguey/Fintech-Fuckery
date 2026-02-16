@@ -28,14 +28,14 @@ const legalPillars = [
     },
     {
         icon: FileText,
-        title: 'The "Agent W-04" Admission — Misrepresentation',
+        title: 'The "(Human) Agent W-04" Admission — Misrepresentation',
         color: "text-orange-400",
         borderColor: "border-orange-900/30",
         bgColor: "bg-orange-950/20",
         points: [
-            'On Feb 13 at 2:27 PM, Agent W-04 confirmed in writing: "the transfer will be refunded until the end of the day."',
+            'On Feb 13 at 2:27 PM, (Human) Agent W-04 confirmed in writing: "the transfer will be refunded until the end of the day."',
             "Client was informed. Business decisions were made based on this official statement.",
-            "Hours later, Agent W-05 retracted the promise and admitted Agent W-04 gave \"false information.\"",
+            "Hours later, (Human) Agent W-05 retracted the promise and admitted (Human) Agent W-04 gave \"false information.\"",
             "A company representative's written confirmation constitutes an actionable representation.",
             "Wise is liable for damages caused by reliance on their agent's false statement.",
         ],
@@ -60,14 +60,14 @@ const filedComplaints = [
     {
         agency: "CFPB",
         caseId: "#XXXXX-XXXX3622",
-        status: "Rejected — Loophole",
+        status: "Rejected — Business Account",
         date: "Feb 11, 2026",
         description: "Money not available when promised",
     },
     {
         agency: "CFPB",
         caseId: "#XXXXX-XXXX6805",
-        status: "Rejected — Loophole",
+        status: "Rejected — Business Account",
         date: "Feb 12, 2026",
         description: "Material breach of Consent Order 2025-CFPB-0004",
     },
@@ -250,6 +250,52 @@ export default function CaseBreakdown() {
                             ))}
                         </tbody>
                     </table>
+                </div>
+            </motion.div>
+
+            {/* The CFPB Gap */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-r from-red-950/20 via-zinc-900/80 to-amber-950/20 border border-red-900/15 rounded-2xl p-5 md:p-6"
+            >
+                <div className="flex gap-4 items-start">
+                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-0.5" />
+                    <div>
+                        <h4 className="text-red-200 font-bold text-sm uppercase tracking-wider">
+                            The Regulatory Gap — And Why It Matters
+                        </h4>
+                        <div className="text-zinc-400 text-sm mt-3 space-y-3 leading-relaxed">
+                            <p>
+                                Both CFPB complaints were{" "}
+                                <strong className="text-red-300">rejected</strong>{" "}
+                                — not because the practices weren&apos;t harmful, but because the account is an{" "}
+                                <strong className="text-zinc-200">LLC business account</strong>.
+                                The CFPB&apos;s consumer protection mandate under Dodd-Frank primarily covers{" "}
+                                <em>individual consumers</em>, not businesses. Wise knows this.
+                            </p>
+                            <p>
+                                This is{" "}
+                                <strong className="text-amber-300">the gap they exploit</strong>.
+                                A small LLC owner processing their first card payment gets
+                                the same predatory treatment as the 1,000+ individual consumers
+                                cited in the consent order — but without the same regulatory safety net.
+                                Same company. Same playbook. Different label on the victim.
+                            </p>
+                            <p>
+                                <strong className="text-zinc-200">That doesn&apos;t mean there&apos;s no recourse.</strong>{" "}
+                                State regulators like the{" "}
+                                <strong className="text-zinc-200">NYDFS</strong> (which licenses Wise as a money transmitter){" "}
+                                don&apos;t draw the same business-vs-consumer line. The{" "}
+                                <strong className="text-zinc-200">FTC&apos;s Section 5</strong>{" "}
+                                authority covers unfair practices against businesses, too. And{" "}
+                                <strong className="text-zinc-200">state attorneys general</strong>{" "}
+                                can investigate deceptive business practices regardless of the victim&apos;s corporate form.
+                                The CFPB rejections don&apos;t close the door — they just reveal which door Wise left open.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </motion.div>
         </div>
