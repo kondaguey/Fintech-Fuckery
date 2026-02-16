@@ -1,6 +1,7 @@
 "use client";
 
 import { ExternalLink, ShieldCheck, Scale, Gavel, BookOpen } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -292,6 +293,33 @@ export default function LanguagePage() {
                         </a>
                     </div>
 
+                    {/* The Pacino Image — Scent of a Woman Courtroom Scene */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                        className="my-8 relative max-w-lg mx-auto"
+                    >
+                        <div className="relative rounded-xl overflow-hidden border border-zinc-700/50 group">
+                            <Image
+                                src="/images/scent-of-a-women-fintech-fuckery.png"
+                                alt="Al Pacino as Lt. Col. Frank Slade delivering the courtroom speech in Scent of a Woman"
+                                width={800}
+                                height={450}
+                                className="w-full h-auto"
+                            />
+                            {/* Meme Text */}
+                            <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
+                                <p className="text-white text-center font-black text-xs md:text-sm uppercase tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+                                    style={{ textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000' }}>
+                                    When NPCs think your appreciation of the First Amendment means you&apos;re conservative.
+                                </p>
+                            </div>
+                        </div>
+
+                    </motion.div>
+
                     <div className="space-y-3 text-sm text-zinc-500 max-w-xl mx-auto leading-relaxed">
                         <p>
                             We don&apos;t do political parties.{" "}
@@ -324,27 +352,7 @@ export default function LanguagePage() {
                 </motion.div>
             </section>
 
-            {/* Footer */}
-            <footer className="border-t border-zinc-900 py-8 text-center">
-                <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs font-mono text-zinc-700">
-                    <Link
-                        href="/"
-                        className="hover:text-zinc-500 transition-colors"
-                    >
-                        ← Back to Fintech Fuckery
-                    </Link>
-                    <span>•</span>
-                    <Link
-                        href="/background"
-                        className="hover:text-zinc-500 transition-colors"
-                    >
-                        Background
-                    </Link>
-                </div>
-                <p className="text-[10px] font-mono text-zinc-800 mt-4">
-                    FINTECH FUCKERY — PROTECTED BY THE FIRST AMENDMENT SINCE 1791
-                </p>
-            </footer>
+
         </main>
     );
 }

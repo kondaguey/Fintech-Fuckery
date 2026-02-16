@@ -5,7 +5,11 @@ import {
     Users,
     ArrowRight,
     AlertTriangle,
+    Flame,
+    ExternalLink,
+    Zap,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -194,8 +198,121 @@ export default function BackgroundPage() {
                 </div>
             </section>
 
+
+            {/* Disclaimer Banner */}
+            <section className="max-w-3xl mx-auto px-4 md:px-6 pb-6">
+                <div className="bg-amber-950/15 border border-amber-900/20 rounded-xl px-5 py-3 text-center">
+                    <p className="text-[11px] font-mono text-amber-600/80 uppercase tracking-wider leading-relaxed">
+                        ⚠️ This is not a call for violence against bankers, fintech executives, or anyone else, jackasses.
+                        It&apos;s a call for regulatory submission fests, public accountability, and possible class actions. Legally. Enthusiastically.
+                    </p>
+                </div>
+            </section>
+
+            {/* Why I'm Taking This So Seriously */}
+            <section className="max-w-3xl mx-auto px-4 md:px-6 pb-12">
+                <div className="bg-red-950/15 border border-red-900/30 rounded-2xl p-6 md:p-8 overflow-hidden">
+                    <div className="flex items-center gap-3 mb-6">
+                        <Zap className="w-5 h-5 text-orange-400" />
+                        <h2 className="text-lg font-bold text-white uppercase tracking-wider">
+                            Why I&apos;m Taking This So Seriously
+                        </h2>
+                    </div>
+
+                    <div className="space-y-5 text-sm md:text-base text-zinc-400 leading-relaxed">
+                        <p className="text-zinc-300 text-base md:text-lg font-medium">
+                            Seriously? Is that even a question?
+                        </p>
+
+                        <p>
+                            Look around. The world is crumbling. Every institution you were
+                            told to trust is either corrupt, complicit, or conveniently
+                            looking the other way. The systems that are supposed to protect
+                            regular people? They protect the people{" "}
+                            <em className="text-zinc-300">running</em> the systems.
+                        </p>
+
+                        <p>
+                            And while all of that is happening — while the walls are closing
+                            in from every direction — people like us are out here trying to do the{" "}
+                            <strong className="text-zinc-200">right thing</strong>. Playing by
+                            the rules. Filing taxes. Setting up accounts the legal way. Running
+                            legitimate businesses. Doing everything by the book.
+                        </p>
+
+                        <p className="text-zinc-300 font-medium">
+                            And on <em>top</em> of all that?
+                        </p>
+
+                        <div className="relative py-6">
+                            <div className="bg-zinc-950/80 border border-red-900/30 rounded-xl p-5 md:p-6 text-center">
+                                <p className="text-2xl md:text-4xl font-black text-white tracking-tight leading-tight">
+                                    They&apos;re fucking with our{" "}
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-red-500 to-orange-500">
+                                        MONEY.
+                                    </span>
+                                </p>
+                                <p className="text-zinc-500 text-xs font-mono mt-3 uppercase tracking-widest">
+                                    And that&apos;s where it gets real.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p>
+                            Freeze an account for months with no explanation. Take fees for
+                            services you revoked. Hold transfers hostage behind &ldquo;compliance
+                            reviews&rdquo; that never end. Force people into a chatbot maze
+                            designed to make them give up.
+                        </p>
+
+                        <p>
+                            When you mess with someone&apos;s livelihood — their rent money, their
+                            business payroll, their ability to{" "}
+                            <strong className="text-zinc-200">eat</strong> — you&apos;re not just
+                            providing bad service. You&apos;re making a decision that has{" "}
+                            <strong className="text-red-400">real consequences</strong> on real
+                            human lives. And then you hide behind a Terms of Service that{" "}
+                            <em>you</em> wrote.
+                        </p>
+
+                        <p className="text-zinc-300 font-medium text-base md:text-lg">
+                            So yeah. I&apos;m taking this seriously.
+                        </p>
+
+                        <p>
+                            Because nobody else is. Because the regulators are underfunded and
+                            overwhelmed. Because the media only cares when the dollar amount
+                            has enough zeroes. Because tech companies have figured out that the
+                            cost of screwing people over is{" "}
+                            <strong className="text-zinc-200">less</strong> than the cost of
+                            doing the right thing — so they just budget for the complaints
+                            and keep going.
+                        </p>
+
+                        <p className="text-white font-bold text-base md:text-lg">
+                            When you fuck with people&apos;s money, shit gets real.
+                        </p>
+
+                        <p className="text-zinc-500 text-xs md:text-sm">
+                            This site is the &ldquo;real.&rdquo;
+                        </p>
+                    </div>
+
+                    {/* Section Disclaimer */}
+                    <div className="mt-6 pt-5 border-t border-red-900/20">
+                        <p className="text-[10px] font-mono text-zinc-700 leading-relaxed text-center">
+                            🔒 DISCLAIMER: Nothing on this page is a threat, an incitement, or a call for
+                            violence of any kind against any person or institution. This is consumer advocacy.
+                            We&apos;re talking about filing complaints, submitting regulatory reports, building class actions,
+                            and making public records. That&apos;s it. If you read this and thought otherwise,
+                            re-read it. Slowly. Then maybe read the First Amendment while you&apos;re at it.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             {/* Why This Site Exists */}
-            <section className="max-w-3xl mx-auto px-4 md:px-6 pb-16">
+            <section className="max-w-3xl mx-auto px-4 md:px-6 pb-12">
                 <div className="bg-zinc-900/80 border border-zinc-800 rounded-2xl p-6 md:p-8">
                     <div className="flex items-center gap-3 mb-6">
                         <Globe className="w-5 h-5 text-blue-400" />
@@ -245,12 +362,7 @@ export default function BackgroundPage() {
                 </div>
             </section>
 
-            {/* Footer */}
-            <footer className="border-t border-zinc-900 py-8 text-center">
-                <p className="text-xs text-zinc-700 font-mono">
-                    FINTECH FUCKERY — NOT FOR PROFIT — CONSUMER ADVOCACY
-                </p>
-            </footer>
+
         </main>
     );
 }

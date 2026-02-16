@@ -2,6 +2,7 @@ import BattleLog from "./components/BattleLog";
 import CaseBreakdown from "./components/CaseBreakdown";
 import ComplaintCTA from "./components/ComplaintCTA";
 import CookieConsent from "./components/CookieConsent";
+
 import {
   ExternalLink,
   Shield,
@@ -128,10 +129,8 @@ export default function Home() {
         <CaseBreakdown />
       </section>
 
-      {/* Divider */}
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
-      </div>
+
+
 
       {/* CTA Section */}
       <section id="submit-complaint" className="max-w-2xl mx-auto py-16 md:py-20 px-4 md:px-6">
@@ -239,46 +238,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-
-          {/* Legal Links */}
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[11px] font-mono text-zinc-700 pt-2">
-            <a
-              href="/background"
-              className="hover:text-zinc-500 transition-colors"
-            >
-              Background
-            </a>
-            <span>•</span>
-            <a
-              href="/language"
-              className="hover:text-zinc-500 transition-colors"
-            >
-              Our Language
-            </a>
-            <span>•</span>
-            <a
-              href="/privacy"
-              className="hover:text-zinc-500 transition-colors"
-            >
-              Privacy
-            </a>
-            <span>•</span>
-            <a href="/terms" className="hover:text-zinc-500 transition-colors">
-              Terms
-            </a>
-            <span>•</span>
-            <a
-              href="/disclaimer"
-              className="hover:text-zinc-500 transition-colors"
-            >
-              Disclaimer
-            </a>
-          </div>
-
-          <p className="text-zinc-700 text-xs font-mono pt-2">
-            © {new Date().getFullYear()} fintechfuckery.org. All rights
-            reserved.
-          </p>
         </div>
       </footer>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import SiteFooter from "./components/SiteFooter";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -59,6 +60,7 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-[#09090b] text-zinc-200`}
       >
         {children}
+        <SiteFooter />
       </body>
     </html>
   );

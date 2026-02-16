@@ -125,6 +125,8 @@ const emptyFiling = (): RegulatoryFiling => ({
 export default function ComplaintCTA() {
     const [step, setStep] = useState(1);
     const [submitted, setSubmitted] = useState(false);
+    const [submitting, setSubmitting] = useState(false);
+    const [submitError, setSubmitError] = useState<string | null>(null);
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -141,9 +143,29 @@ export default function ComplaintCTA() {
     const [events, setEvents] = useState<TimelineEventEntry[]>([emptyEvent()]);
     const [filings, setFilings] = useState<RegulatoryFiling[]>([]);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setSubmitted(true);
+        setSubmitting(true);
+        setSubmitError(null);
+
+        try {
+            const res = await fetch("/api/submit-complaint", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ formData, events, filings }),
+            });
+
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.error || "Submission failed");
+            }
+
+            setSubmitted(true);
+        } catch (err) {
+            setSubmitError(err instanceof Error ? err.message : "Something went wrong. Try again.");
+        } finally {
+            setSubmitting(false);
+        }
     };
 
     const addEvent = () => setEvents([...events, emptyEvent()]);
@@ -684,12 +706,19 @@ export default function ComplaintCTA() {
                             </div>
                         </label>
 
+                        {submitError && (
+                            <div className="w-full p-3 bg-red-950/30 border border-red-900/40 rounded-xl text-sm text-red-400 text-center">
+                                {submitError}
+                            </div>
+                        )}
+
                         <button
                             type="submit"
-                            className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold text-sm rounded-xl transition-all cursor-pointer shadow-lg shadow-red-900/20 hover:shadow-red-900/40"
+                            disabled={submitting}
+                            className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold text-sm rounded-xl transition-all cursor-pointer shadow-lg shadow-red-900/20 hover:shadow-red-900/40 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             <Send className="w-4 h-4" />
-                            Submit Your Story
+                            {submitting ? "Submitting..." : "Submit Your Story"}
                         </button>
 
                         <p className="text-[11px] text-zinc-600 text-center leading-relaxed">

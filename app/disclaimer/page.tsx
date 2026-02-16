@@ -90,11 +90,26 @@ export default function DisclaimerPage() {
 
                     <section>
                         <h2 className="text-lg font-bold text-zinc-200 mb-3">
+                            Non-Violence Statement
+                        </h2>
+                        <p>
+                            This Site does not advocate for, encourage, or condone violence,
+                            harassment, threats, or illegal activity of any kind against any
+                            person, company, or institution. All advocacy conducted through
+                            this Site is limited to regulatory filings, public documentation,
+                            consumer protection reporting, and potential class action
+                            participation — all of which are protected activities under
+                            United States law.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className="text-lg font-bold text-zinc-200 mb-3">
                             Contact
                         </h2>
                         <p>
-                            For concerns about content published on this Site:{" "}
-                            <strong className="text-zinc-200">legal@fintechfuckery.org</strong>
+                            For concerns about content published on this Site,
+                            contact the Site operator through the form on the homepage.
                         </p>
                     </section>
                 </div>
