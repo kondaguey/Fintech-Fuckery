@@ -209,7 +209,7 @@ export default function ComplaintCTA() {
         <div className="w-full">
             <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight leading-tight">
-                    Has Your Online Bank<br />
+                    Has Your Online &ldquo;Bank&rdquo; Wrapper<br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
                         Fucked You Over
                     </span>
