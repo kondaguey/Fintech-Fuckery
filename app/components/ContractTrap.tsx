@@ -71,7 +71,7 @@ const contractRealities: ContractReality[] = [
         theirDefense:
             "Wise will argue: \"We rendered the service. Our service is routing transactions (Clause 3.1). We routed it. Visa/Mastercard took their interchange cut. We can't refund a fee that's already been split with the card networks. The settlement failure was caused by HIS breach of § 4.6, not ours.\" In strict contract terms — they have a point.",
         whyRegulatorsStillCare: [
-            "On Feb 16, 2026, Wise posted this policy publicly on Google Maps AND Instagram — identical copy-paste responses. They just created Exhibit D.",
+            "On Feb 16, 2026, Wise posted this policy publicly on Google Maps AND Trustpilot — nearly identical copy-paste responses — and sent a similar message via Instagram DM. They just created Exhibit D.",
             "The CFPB fined Wise $2.025M in Consent Order 2025-CFPB-0004 for THIS EXACT PATTERN: failing to refund fees when funds were not made available to consumers as promised.",
             "A company currently under a CFPB consent order going on social media to publicly defend the exact practice they were fined for is the kind of thing that makes regulators pick up the phone.",
             "Under Dodd-Frank, an \"Unfair\" practice causes substantial consumer injury that is not reasonably avoidable and not outweighed by benefits. Keeping $43.88 for a service that resulted in zero settlement to the merchant meets all three prongs.",
@@ -121,7 +121,7 @@ const contractRealities: ContractReality[] = [
 ];
 
 const publicConfession = {
-    platform: "Google Maps & Instagram",
+    platform: "Google Maps & Trustpilot (public) · Instagram (DM)",
     date: "Feb 16, 2026",
     significance: [
         {
@@ -229,8 +229,8 @@ export default function ContractTrap() {
                                 </span>
                             </div>
                             <p className="text-zinc-500 text-xs font-mono">
-                                Identical copy-paste response posted on Google Maps &
-                                Instagram
+                                Nearly identical copy-paste responses on Google Maps &
+                                Trustpilot · Instagram DM
                             </p>
                         </div>
                     </div>
@@ -243,7 +243,7 @@ export default function ContractTrap() {
                             wi.se/business_cards&rdquo;
                         </p>
                         <footer className="mt-2 text-xs text-zinc-600 not-italic font-mono">
-                            — Wise, publicly on Google Maps & Instagram
+                            — Wise, publicly on Google Maps & Trustpilot
                         </footer>
                     </blockquote>
 

@@ -138,9 +138,9 @@ const sagaEvents: TimelineEvent[] = [
         title: "The Public Confession — Copy-Paste Defense",
         type: "warning",
         description:
-            'Wise posts identical copy-paste responses on Google Maps and Instagram publicly citing "Section 4.6" of their Customer Agreement to justify retaining the $43.88 fee for a service they refused to render. They explicitly state: "if one of these card payments is refunded, then we\'re unable to return the fees" — publicly admitting to the exact practice the CFPB fined them for in Consent Order 2025-CFPB-0004: failing to refund fees when funds were not made available.',
+            'Wise posts nearly identical copy-paste responses on Google Maps and Trustpilot — and sends a similar message via Instagram DM — publicly citing "Section 4.6" of their Customer Agreement to justify retaining the $43.88 fee for a service they refused to render. They explicitly state: "if one of these card payments is refunded, then we\'re unable to return the fees" — publicly admitting to the exact practice the CFPB fined them for in Consent Order 2025-CFPB-0004: failing to refund fees when funds were not made available.',
         evidence:
-            "Public posts on Google Maps & Instagram (Exhibit D)",
+            "Public posts on Google Maps & Trustpilot + Instagram DM (Exhibit D)",
         quote:
             "Similarly, if one of these card payments is refunded, then we're unable to return the fees.",
     },

@@ -43,7 +43,7 @@ const receipts: Violation[] = [
         label: "The $43.88 Fee",
         icon: Target,
         danielsSituation:
-            "Wise told Daniel on Google Maps and Instagram (Feb 16, 2026) that they \"cannot refund the fee.\" They are keeping $43.88 for a card payment that was never settled to DnDL Creative LLC.",
+            "Wise told Daniel on Google Maps, Trustpilot, and via Instagram DM (Feb 16, 2026) that they \"cannot refund the fee.\" They are keeping $43.88 for a card payment that was never settled to DnDL Creative LLC.",
         paragraph: "¶ 96–97",
         quote:
             "Section 1005.33(c)(2)(ii) of the Remittance Rule requires that when an error occurs that concerns the failure to make funds available to a designated recipient by the date of availability... the remittance provider must... refund any fees imposed on the transfer due to such failure. In certain instances, Respondent failed to refund sender fees even where Respondent found that funds were not made available... As a result, Respondent identified 351 instances of sender fees that were not refunded.",
@@ -132,7 +132,7 @@ const conductProvisions = [
         paragraph: "¶ 120(k)",
         text: "Must refund a sender all fees and taxes imposed when an error occurred.",
         violated: true,
-        how: "Wise publicly stated on Google Maps/Instagram they \"cannot refund the fee.\"",
+        how: "Wise publicly stated on Google Maps/Trustpilot (and via Instagram DM) they \"cannot refund the fee.\"",
     },
     {
         paragraph: "¶ 121(c)",
@@ -765,8 +765,8 @@ export default function ConsentOrderPage() {
                                     </span>
                                 </div>
                                 <p className="text-zinc-500 text-xs font-mono">
-                                    Posted publicly on Google Maps & Instagram — identical
-                                    copy-paste responses
+                                    Nearly identical copy-paste responses on Google Maps &
+                                    Trustpilot · similar message via Instagram DM
                                 </p>
                             </div>
                         </div>
@@ -778,7 +778,7 @@ export default function ConsentOrderPage() {
                                 mentioned here: wi.se/business_cards&rdquo;
                             </p>
                             <footer className="mt-2 text-xs text-zinc-600 not-italic font-mono">
-                                — Wise, publicly on Google Maps & Instagram, Feb 16, 2026
+                                — Wise, publicly on Google Maps & Trustpilot, Feb 16, 2026
                             </footer>
                         </blockquote>
 
@@ -891,7 +891,7 @@ export default function ConsentOrderPage() {
                                             <strong className="text-red-200">
                                                 February 16, 2026:
                                             </strong>{" "}
-                                            Wise goes on Google Maps and Instagram
+                                            Wise goes on Google Maps, Trustpilot, and Instagram
                                             and publicly states: &ldquo;we&apos;re
                                             unable to return the fees.&rdquo; —
                                             defending the exact practice cited in
