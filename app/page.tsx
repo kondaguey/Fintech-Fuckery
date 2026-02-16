@@ -24,38 +24,6 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Navigation */}
-      <nav className="border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-4xl mx-auto px-6 flex items-center justify-center gap-6 py-3">
-          <a
-            href="/background"
-            className="text-xs font-mono text-zinc-500 hover:text-zinc-300 uppercase tracking-wider transition-colors"
-          >
-            Background
-          </a>
-          <span className="w-px h-3 bg-zinc-800" />
-          <a
-            href="/#battle-log"
-            className="text-xs font-mono text-zinc-500 hover:text-zinc-300 uppercase tracking-wider transition-colors"
-          >
-            The Complaints
-          </a>
-          <span className="w-px h-3 bg-zinc-800" />
-          <a
-            href="/consent-order"
-            className="text-xs font-mono text-zinc-500 hover:text-zinc-300 uppercase tracking-wider transition-colors"
-          >
-            Consent Order
-          </a>
-          <span className="w-px h-3 bg-zinc-800" />
-          <a
-            href="/language"
-            className="text-xs font-mono text-zinc-500 hover:text-zinc-300 uppercase tracking-wider transition-colors"
-          >
-            Our Language
-          </a>
-        </div>
-      </nav>
 
       {/* Hero */}
       <header className="max-w-4xl mx-auto pt-16 md:pt-24 pb-8 px-6 text-center">
