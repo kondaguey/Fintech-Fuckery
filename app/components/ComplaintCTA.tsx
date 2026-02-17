@@ -324,7 +324,7 @@ export default function ComplaintCTA() {
                                 id="company"
                                 type="text"
                                 required
-                                placeholder="e.g. Wise, Revolut, Chime, PayPal..."
+                                placeholder="e.g. Wise, Chime, PayPal..."
                                 value={formData.company}
                                 onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                                 className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-200 placeholder:text-zinc-700 focus:outline-none focus:border-zinc-600 focus:ring-1 focus:ring-zinc-700 transition-all"

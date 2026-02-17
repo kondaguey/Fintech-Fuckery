@@ -20,7 +20,6 @@ export const metadata = {
 
 const fintechs = [
     "Wise",
-    "Revolut",
     "Chime",
     "Cash App",
     "Venmo",
@@ -69,7 +68,7 @@ export default function BackgroundPage() {
                             companies has fundamentally reshaped how people move, store, and
                             manage money. Companies like{" "}
                             <strong className="text-zinc-200">
-                                Wise, Revolut, Chime, Cash App, Venmo, PayPal, N26, Monzo
+                                Wise, Chime, Cash App, Venmo, PayPal, N26, Monzo
                             </strong>
                             , and dozens of others have gained{" "}
                             <em className="text-zinc-300">explosive</em> global popularity by
